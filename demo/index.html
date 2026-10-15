@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora subida del alquiler 2026 (límite 2 % e IRAV) | Alquiler en Regla</title>
+<meta name="description" content="¿Cuánto te pueden subir el alquiler en 2026? Calcúlalo en 10 segundos con el límite del 2 % y el IRAV. Gratis, sin registro y citando el BOE.">
+<link rel="canonical" href="https://alquilerenregla.es/">
+<meta property="og:title" content="¿Cuánto te pueden subir el alquiler? Calcúlalo en 10 s">
+<meta property="og:description" content="Límite del 2 %, IRAV, prórrogas y fianza. Calculadoras gratuitas con la ley en la mano.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alquilerenregla.es/">
+<meta property="og:locale" content="es_ES">
+<meta name="robots" content="noindex"><!-- demo: quitar al publicar -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","name":"Alquiler en Regla","url":"https://alquilerenregla.es/","inLanguage":"es-ES"},
+{"@type":"WebApplication","name":"Calculadora de subida del alquiler","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿Cuánto me pueden subir el alquiler en 2026?","acceptedAnswer":{"@type":"Answer","text":"Entre el 08/10/2026 y el 31/12/2027 la actualización anual está limitada al 2 % (Real Decreto-ley 29/2026, pendiente de convalidación). Si el IRAV es menor, se aplica el IRAV."}},
+{"@type":"Question","name":"¿Qué es el IRAV?","acceptedAnswer":{"@type":"Answer","text":"Es el Índice de Referencia para la Actualización de Arrendamientos de Vivienda que publica el INE. El último dato comprobado es 2,47 % (agosto de 2026)."}},
+{"@type":"Question","name":"¿Puede el casero subirme la renta sin avisar?","acceptedAnswer":{"@type":"Answer","text":"No. La actualización debe notificarse por escrito indicando el porcentaje aplicado y su base legal."}}]}
+]}
+</script>
+<style>
+:root{--bg:#f6f5f1;--ink:#16211d;--mute:#5b6661;--brand:#0f5a4a;--soft:#e3efe9;--card:#fff;--line:#e2e0d9}
+*{box-sizing:border-box}body{margin:0;font:17px/1.55 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--brand)}.wrap{max-width:1040px;margin:auto;padding:0 16px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;text-decoration:none;color:var(--ink)}nav a{margin-left:18px;text-decoration:none;color:var(--ink);font-size:15px}
+h1{font-size:clamp(32px,5vw,54px);line-height:1.05;letter-spacing:-.02em;margin:40px 0 12px}
+.lead{color:var(--mute);max-width:620px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}
+.chips button{border:1px solid var(--line);background:var(--card);padding:10px 16px;border-radius:99px;font:inherit;font-size:15px;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--brand);color:#fff;border-color:var(--brand)}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+label{display:block;font-size:14px;color:var(--mute);margin-bottom:12px}
+input{display:block;width:100%;margin-top:4px;padding:12px;font:inherit;border:1px solid var(--line);border-radius:10px}
+.out{background:var(--soft);border-radius:14px;padding:20px}
+.big{font-size:44px;font-weight:800;color:var(--brand);line-height:1}
+.why{font-size:14px;color:var(--mute);margin-top:10px}
+.status{font-size:13px;display:inline-block;background:#fdf1d6;color:#7a5600;padding:3px 10px;border-radius:99px;margin-top:16px}
+section{margin:56px 0}h2{font-size:28px;margin:0 0 16px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+footer{border-top:1px solid var(--line);padding:24px 0;font-size:14px;color:var(--mute)}
+@media(max-width:700px){.calc{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="/">⌂ Alquiler en Regla</a>
+<nav><a href="/calculadoras/">Calculadoras</a><a href="/guias/">Guías</a><a href="/normativa/">Normativa</a></nav></header>
+
+<main>
+<h1>¿Qué te pasa con tu alquiler?</h1>
+<p class="lead">Elige tu situación y te damos la respuesta con la ley en la mano. Sin formularios largos, sin registro: tus datos no salen del navegador.</p>
+
+<div class="chips" role="group" aria-label="Tu situación">
+<button aria-pressed="true">📈 Me suben la renta</button>
+<button aria-pressed="false">📅 Se acaba mi contrato</button>
+<button aria-pressed="false">🚪 Me quiero ir antes</button>
+<button aria-pressed="false">🛡️ No me devuelven la fianza</button>
+</div>
+
+<div class="calc" aria-labelledby="t-calc">
+<form oninput="calc()">
+<h2 id="t-calc" style="font-size:20px">Calculadora de subida del alquiler 2026</h2>
+<label>Renta mensual actual (€)<input id="r" type="number" value="900" min="0" inputmode="decimal"></label>
+<label>Fecha de la actualización<input id="d" type="date" value="2026-11-01"></label>
+</form>
+<div class="out" aria-live="polite">
+<div class="why">Tu nueva renta máxima</div>
+<div class="big" id="res">918,00 €</div>
+<p class="why" id="exp"></p>
+<span class="status">Norma en vigor · pendiente de convalidación · revisado 14/10/2026</span>
+</div>
+</div>
+
+<section>
+<h2>Preguntas frecuentes sobre la subida del alquiler</h2>
+<details open><summary>¿Cuánto me pueden subir el alquiler en 2026?</summary><p>Entre el 08/10/2026 y el 31/12/2027 la subida anual está limitada al 2 % (Real Decreto-ley 29/2026). Si el IRAV es menor, se aplica el IRAV.</p></details>
+<details><summary>¿Qué es el IRAV?</summary><p>El índice del INE para actualizar alquileres de vivienda. Último dato comprobado: 2,47 % (agosto de 2026).</p></details>
+<details><summary>¿Puede el casero subirme la renta sin avisar?</summary><p>No. Debe notificarlo por escrito con el porcentaje y la base legal.</p></details>
+</section>
+</main>
+
+<footer>© 2026 Alquiler en Regla · Información orientativa, no sustituye asesoramiento profesional · Fuentes: BOE, INE, Ministerio de Vivienda.</footer>
+</div>
+<script>
+const IRAV=2.47,CAP=2,from=new Date('2026-10-08'),to=new Date('2027-12-31');
+function calc(){const r=+document.getElementById('r').value||0,d=new Date(document.getElementById('d').value);
+const capped=d>=from&&d<=to,p=capped?Math.min(CAP,IRAV):IRAV,n=r*(1+p/100);
+document.getElementById('res').textContent=n.toLocaleString('es-ES',{style:'currency',currency:'EUR'});
+document.getElementById('exp').textContent=capped?`IRAV ${IRAV} % > límite ${CAP} % → se aplica el ${p} % (RDL 29/2026). Subida: ${(n-r).toFixed(2)} €/mes.`:`Fuera del periodo del límite: se aplica el IRAV (${IRAV} %).`}
+document.querySelectorAll('.chips button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.chips button').forEach(x=>x.setAttribute('aria-pressed',x===b))});
+calc();
+</script>
+</body>
+</html>
